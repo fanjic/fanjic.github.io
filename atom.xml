@@ -6,7 +6,7 @@
   <link href="https://fanjic.github.io/atom.xml" rel="self"/>
   
   <link href="https://fanjic.github.io/"/>
-  <updated>2021-04-23T03:24:14.537Z</updated>
+  <updated>2021-04-24T09:31:42.568Z</updated>
   <id>https://fanjic.github.io/</id>
   
   <author>
@@ -21,16 +21,16 @@
     <link href="https://fanjic.github.io/2030/12/27/just%20do%20it/"/>
     <id>https://fanjic.github.io/2030/12/27/just%20do%20it/</id>
     <published>2030-12-26T16:00:00.000Z</published>
-    <updated>2021-04-23T03:24:14.537Z</updated>
+    <updated>2021-04-24T09:31:42.568Z</updated>
     
-    <content type="html"><![CDATA[<p align=center>不讲究，也不将就</p><div align=center><img src="..\img\1.jpg" style="zoom:67%;" /></div>]]></content>
+    <content type="html"><![CDATA[<p align=center>想做的事情马上去做，不要让行为一直停留在思想上</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p align=center&gt;不讲究，也不将就&lt;/p&gt;
+    <summary type="html">&lt;p align=center&gt;想做的事情马上去做，不要让行为一直停留在思想上&lt;/p&gt;
 
-&lt;div align=center&gt;&lt;img src=&quot;..\img\1.jpg&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/div&gt;
+
 
 
 
@@ -47,19 +47,39 @@
   </entry>
   
   <entry>
-    <title>fixing style</title>
-    <link href="https://fanjic.github.io/2021/04/23/fixing%20style/"/>
-    <id>https://fanjic.github.io/2021/04/23/fixing%20style/</id>
+    <title>动态代理（Java）</title>
+    <link href="https://fanjic.github.io/2021/04/23/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%EF%BC%88Java%EF%BC%89/"/>
+    <id>https://fanjic.github.io/2021/04/23/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%EF%BC%88Java%EF%BC%89/</id>
     <published>2021-04-22T16:00:00.000Z</published>
-    <updated>2021-04-23T03:03:39.869Z</updated>
+    <updated>2021-04-24T09:41:50.674Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://github.com/HeskeyBaozi/hexo-theme-lite">https://github.com/HeskeyBaozi/hexo-theme-lite</a></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="动态代理（JDK动态代理、Cglib动态代理）"><a href="#动态代理（JDK动态代理、Cglib动态代理）" class="headerlink" title="动态代理（JDK动态代理、Cglib动态代理）"></a>动态代理（JDK动态代理、Cglib动态代理）</h3><p>代理模式是一种常见的设计模式，在Java中涉及广泛，例如spring底层的AOP用的就是这种编程思想。</p><p>顾名思义，代理模式即是给目标对象提供一个代理对象（proxy），并由代理对象控制对目标对象的引用，也可以在目标基础上作增强。</p><p>首先了解下静态代理，也可以理解为手动对目标对象进行代理，即</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/HeskeyBaozi/hexo-theme-lite&quot;&gt;https://github.com/HeskeyBaozi/hexo-theme-lite&lt;/a&gt;&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;h3 id=&quot;动态代理（JDK动态代理、Cglib动态代理）&quot;&gt;&lt;a href=&quot;#动态代理（JDK动态代理、Cglib动态代理）&quot; class=&quot;headerlink&quot; title=&quot;动态代理（JDK动态代理、Cglib动态代理）&quot;&gt;&lt;/a&gt;动态代理（JDK动态代理、Cgli</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>聚合和组合</title>
+    <link href="https://fanjic.github.io/2021/04/23/%E8%81%9A%E5%90%88%E5%92%8C%E7%BB%84%E5%90%88/"/>
+    <id>https://fanjic.github.io/2021/04/23/%E8%81%9A%E5%90%88%E5%92%8C%E7%BB%84%E5%90%88/</id>
+    <published>2021-04-22T16:00:00.000Z</published>
+    <updated>2021-04-24T09:46:28.922Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="聚合和组合"><a href="#聚合和组合" class="headerlink" title="聚合和组合"></a>聚合和组合</h3><p>之前看相关类图的时候对聚合和组合的概念有点模糊，然后查阅了一些资料作以区分，接下来是个人的一些见解。</p><p><strong>聚合（整体和部分关系较弱）：</strong></p><p>在UML图中的关系表示为</p><img src="..\img\2.png" style="zoom:95%;" /><p>聚合：两个对象之间是整体和部分的弱关系，整体和部分可以分开，部分的生命周期可以超越整体。</p><p>A类的对象在创建时不会立即创建B类的对象，而是等待一个外界的对象传给它，传给它的这个对象不是A类创建的，在程序中B类一般作为A类的局部参数或变量存在。（个人比较喜欢IntelliJ Light风格，对眼睛比较友好）</p><p>例如人和手机的关系，人（Person），手机（Phone）。</p><img src="..\img\5.png" style="zoom:80%;" /><p><strong>聚合（整体和部分关系较密）：</strong></p><p>在UML图中的关系表示为</p><img src="..\img\3.png" style="zoom: 55%;" /><p>组合：两个对象之间是整体和部分的密切关系，部分的生命周期不能超越整体，或者说不能脱离整体而存在。</p><p>例如人和灵魂，人没有灵魂依然可以行尸走肉般存在，但是灵魂没有人体躯壳作为载体将不复存在。</p><p>当A类的一个对象产生时，B类的对象随之产生，当A类的这个对象消亡时，它所包含的B类的对象也随之消亡，在程序中B类实例化对象会随着A类实例化而产生。人（Person），灵魂（Soul）。</p><img src="..\img\4.png" style="zoom:80%;" /><p><strong>聚合和组合关系的区别：</strong></p><p>1、依赖性区别</p><p>聚合中的两种类（或实体）是可以单独存在的，不会相互影响；被关联的一方可以独立于关联一方，依赖性不强。</p><p>相反，组合中的两个实体（或者类）是高度依赖于彼此的，它们之间会相互影响。</p><p>2、生命周期的不同</p><p>在聚合关系中的两个类（或实体）的生命周期是不同步；</p><p>但在组合关系中的两个类（或实体）的生命周期是同步的。</p><p>3、关联强度的不同</p><p>聚合关联程度（耦合性）比组合要弱；</p><p>在各种对象关系中，关系的强弱顺序为：<strong>泛化</strong> <strong>=</strong> <strong>实现</strong> <strong>&gt;</strong> <strong>组合</strong> <strong>&gt;</strong> <strong>聚合</strong> <strong>&gt;</strong> <strong>关联</strong> <strong>&gt;</strong> <strong>依赖</strong>。</p><p>4、关系类型的区别</p><p>聚合代表了has-a关系，一种单向关系；组合代表了part-of关系。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;聚合和组合&quot;&gt;&lt;a href=&quot;#聚合和组合&quot; class=&quot;headerlink&quot; title=&quot;聚合和组合&quot;&gt;&lt;/a&gt;聚合和组合&lt;/h3&gt;&lt;p&gt;之前看相关类图的时候对聚合和组合的概念有点模糊，然后查阅了一些资料作以区分，接下来是个人的一些见解。&lt;/p&gt;
+&lt;p&gt;</summary>
       
     
     
